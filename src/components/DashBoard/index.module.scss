@@ -1,0 +1,64 @@
+.bgVideo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.panelContainer {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  padding: 20px;
+  background-color: #3972dd9d;
+  z-index: 999;
+  .panelTitle {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #0ba6ee;
+  }
+  .panel {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    padding-left: 0;
+    width: fit-content;
+
+    .panelItem {
+      width: 60px;
+      border: 1px solid #fff;
+      background-color: #0ba6ee;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+      user-select: none;
+    }
+  }
+}
+
+.controlContainer {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  background-color: #3972dd9d;
+  padding: 20px;
+  z-index: 999;
+  .controlItem {
+    width: 60px;
+    border: 1px solid #fff;
+    background-color: #0ba6ee;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
